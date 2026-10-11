@@ -8,7 +8,7 @@ describe("getAPIKey", () => {
       authorization: "ApiKey test-api-key",
     };
 
-    expect(getAPIKey(headers)).toBe("wrong-api-key");
+    expect(getAPIKey(headers)).toBe("test-api-key");
   });
 
   test("returns null when the authorization header is missing", () => {
